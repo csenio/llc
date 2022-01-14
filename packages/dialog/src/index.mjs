@@ -1,1 +1,5 @@
-export {default as MyCounterButton} from './MyCounterButton.svelte'
+export {default as Close} from './dialog/close.svelte'
+export {default as Container} from './dialog/container.svelte'
+export {default as Content} from './dialog/content.svelte'
+export {default as Root} from './dialog/root.svelte'
+export {default as Trigger} from './dialog/trigger.svelte'

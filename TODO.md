@@ -11,6 +11,7 @@
 [] dialog
 [] menu button
 [] tooltip
+[] disclosure
 [] toast
 [] toggle button
 [] accordion
