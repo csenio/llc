@@ -1,13 +1,14 @@
 <script>
   import {getContext} from 'svelte'
+  export let entry
+
+  let transition = entry.type || entry
 
   const {state} = getContext('dialog')
 </script>
 
 {#if $state.matches('open')}
-  <div>
-    <slot />
-  </div>
+  <div in:transition={entry} />
 {/if}
 
 <style>

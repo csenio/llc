@@ -1,6 +1,7 @@
 <script>
+  import {fade, fly} from 'svelte/transition'
   import {Meta, Template, Story} from '@storybook/addon-svelte-csf'
-  import {Close, Trigger, Container, Content, Root} from '.'
+  import {Close, Trigger, Portal, Content, Root, Overlay} from '.'
 </script>
 
 <Meta title="Example/CounterButton" />
@@ -9,15 +10,15 @@
 <Template let:args>
   <Root>
     <Trigger>Open me</Trigger>
-    <Container>
-      <Content>
+    <Portal entry={{type: fade}}>
+      <Content entry={{type: fly, y: 50, duration: 200}}>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias eum in molestiae sit commodi nesciunt corporis
           illum culpa tenetur nemo.
         </p>
         <Close {...args} o:click={args.onClick}>close</Close>
       </Content>
-    </Container>
+    </Portal>
   </Root>
 </Template>
 
