@@ -15,7 +15,7 @@
   - [ ] places focus inside the dialog on open
     - [ ] focus least destructive element by default (close button)
     - [ ] allow user to choose focus element
-  - [ ] dialog contains tab sequence
+  - [x] dialog contains tab sequence
   - [ ] focus returns to trigger once dialog is closed
 - [ ] side effect
   - [ ] should disable scroll on body
@@ -30,6 +30,7 @@
   - [ ] backdrop can have fade in and fade out animation
   - [ ] content can have fade in and fade out animation
   - [ ] content can have a crossfade animation
+  - [ ] should not be able to interact with dialog while in closing animation
 - [ ] wai aria roles
   - [ ] dialog container has `dialog` role
   - [ ] dialog container has `aria-modal` set to true
