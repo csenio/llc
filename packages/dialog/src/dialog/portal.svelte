@@ -1,14 +1,27 @@
 <script>
   import {getContext} from 'svelte'
+  let element
   export let entry
 
   let transition = entry.type || entry
 
-  const {state} = getContext('dialog')
+  const {state, send} = getContext('dialog')
+
+  function handleKeyDown(e) {
+    send('KEYDOWN', {key: e.key})
+  }
+
+  function handleOverlayMouseDown(e) {
+    if (e.target === element) {
+      send('OVERLAY_MOUSEDOWN')
+    }
+  }
 </script>
 
+<svelte:window on:keydown={handleKeyDown} />
+
 {#if $state.matches('open')}
-  <div in:transition={entry}>
+  <div bind:this={element} on:mousedown={handleOverlayMouseDown} data-foo in:transition={entry}>
     <slot />
   </div>
 {/if}

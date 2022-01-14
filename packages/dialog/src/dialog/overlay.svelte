@@ -4,11 +4,15 @@
 
   let transition = entry.type || entry
 
-  const {state} = getContext('dialog')
+  const {state, send} = getContext('dialog')
+
+  function handleKeyDown(e) {
+    console.log(e.target)
+  }
 </script>
 
 {#if $state.matches('open')}
-  <div in:transition={entry} />
+  <div on:keydown={handleKeyDown} in:transition={entry} />
 {/if}
 
 <style>

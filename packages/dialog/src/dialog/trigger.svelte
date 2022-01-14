@@ -4,7 +4,7 @@
   let {send} = getContext('dialog')
 
   function handleClick() {
-    send('TRIGGER_MOUSEDOWN')
+    send('TRIGGER_CLICK')
   }
 </script>
 

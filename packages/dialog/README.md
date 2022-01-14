@@ -7,9 +7,10 @@
 - [x] mouse interactions
   - [x] opens dialog window in portal on trigger click
   - [x] closes on close button click
-- [ ] keyboard interactions
-  - [ ] space / enter on trigger opens the dialog
-  - [ ] esc while in dialog closes the dialog
+  - [x] closes on overlay click
+- [x] keyboard interactions
+  - [x] space / enter on trigger opens the dialog
+  - [x] esc while in dialog closes the dialog
 - [ ] focus management
   - [ ] places focus inside the dialog on open
     - [ ] focus least destructive element by default (close button)
@@ -24,6 +25,7 @@
   - [ ] dialog can be styled to be scrollable
   - [ ] dialog position can shift between mobile / desktop view
   - [ ] dialog can be styled to be larger than the screen
+  - [ ] allow all events to be triggered from the outside
 - [ ] animation
   - [ ] backdrop can have fade in and fade out animation
   - [ ] content can have fade in and fade out animation
