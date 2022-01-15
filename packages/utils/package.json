@@ -1,10 +1,10 @@
 {
-  "name": "focus-scope",
+  "name": "utils",
   "version": "0.0.0",
   "description": "Styles and components for use in svelte websites",
   "type": "module",
-  "module": "./src/index.mjs",
-  "svelte": "./src/index.mjs",
+  "module": "./index.mjs",
+  "svelte": "./index.mjs",
   "license": "MIT",
   "devDependencies": {
     "svelte": "^3.9.2"
@@ -15,7 +15,6 @@
   ],
   "dependencies": {
     "@xstate/svelte": "^0.2.0",
-    "xstate": "^4.27.0",
-    "utils": "*"
+    "xstate": "^4.27.0"
   }
 }

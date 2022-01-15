@@ -1,10 +1,9 @@
 <script>
-  import {fade, fly} from 'svelte/transition'
   import {Meta, Template, Story} from '@storybook/addon-svelte-csf'
   import {FocusScope} from '.'
 </script>
 
-<Meta title="Example/FocusScope" />
+<Meta title="Utils/FocusScope" />
 
 <!-- More on component templates: https://storybook.js.org/docs/svelte/writing-stories/introduction#using-args -->
 <Template let:args>

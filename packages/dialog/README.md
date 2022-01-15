@@ -11,12 +11,12 @@
 - [x] keyboard interactions
   - [x] space / enter on trigger opens the dialog
   - [x] esc while in dialog closes the dialog
-- [ ] focus management
-  - [ ] places focus inside the dialog on open
-    - [ ] focus least destructive element by default (close button)
-    - [ ] allow user to choose focus element
+- [x] focus management
+  - [x] places focus inside the dialog on open
+    - [x] focus least destructive element by default (close button)
+    - [x] allow user to choose focus element
   - [x] dialog contains tab sequence
-  - [ ] focus returns to trigger once dialog is closed
+  - [x] focus returns to trigger once dialog is closed
 - [ ] side effect
   - [ ] should disable scroll on body
   - [ ] should possibly allow pinch zoom on mobile devices
@@ -26,6 +26,7 @@
   - [ ] dialog position can shift between mobile / desktop view
   - [ ] dialog can be styled to be larger than the screen
   - [ ] allow all events to be triggered from the outside
+  - [ ] dialog should be in front of all other elements (portal)
 - [ ] animation
   - [ ] backdrop can have fade in and fade out animation
   - [ ] content can have fade in and fade out animation

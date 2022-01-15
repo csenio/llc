@@ -1,7 +1,10 @@
-import {createMachine} from 'xstate'
+import {createMachine, assign} from 'xstate'
 
 const dialogMachine = createMachine(
   {
+    context: {
+      elements: null,
+    },
     id: 'dialog',
     initial: 'closed',
     states: {
@@ -10,24 +13,26 @@ const dialogMachine = createMachine(
           CLOSE_MOUSEDOWN: 'closed',
           OVERLAY_MOUSEDOWN: 'closed',
           KEYDOWN: [
-            // {
-            //   actions: 'focusNext',
-            //   cond: 'isArrowDown',
-            // },
-            // {
-            //   actions: 'focusPrevious',
-            //   cond: 'isArrowUp',
-            // },
             {
               target: 'closed',
               cond: 'isEscapeKey',
             },
           ],
+          ELEM_INIT: {
+            actions: assign({
+              elements: (ctx, evt) => ({...ctx.elements, [evt.name]: evt.element}),
+            }),
+          },
         },
       },
       closed: {
         on: {
           TRIGGER_CLICK: 'open',
+          ELEM_INIT: {
+            actions: assign({
+              elements: (ctx, evt) => ({...ctx.elements, [evt.name]: evt.element}),
+            }),
+          },
         },
       },
     },
