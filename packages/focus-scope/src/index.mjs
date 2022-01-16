@@ -1,1 +1,1 @@
-export {default as FocusScope} from './focusScope.svelte'
+export { default as FocusScope } from './focusScope.svelte';
