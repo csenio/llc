@@ -1,8 +1,7 @@
 <script>
-	import { fade, fly } from 'svelte/transition';
 	import { crossfade, scale } from 'svelte/transition';
 	import { Meta, Template, Story } from '@storybook/addon-svelte-csf';
-	import { Close, Trigger, Portal, Content, Root, Overlay } from '..';
+	// import { Close, Trigger, Portal, Content, Root, Overlay } from '..';
 
 	let open = false;
 

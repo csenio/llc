@@ -4,7 +4,7 @@
 
 	let transition = entry.type || entry;
 
-	const { state, send } = getContext('dialog');
+	const { state } = getContext('dialog');
 
 	function handleKeyDown(e) {
 		console.log(e.target);

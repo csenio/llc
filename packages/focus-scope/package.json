@@ -9,9 +9,6 @@
 	"devDependencies": {
 		"svelte": "^3.9.2"
 	},
-	"scripts": {
-		"lint": "prettier --check . && eslint ."
-	},
 	"files": [
 		"src",
 		"dist"
