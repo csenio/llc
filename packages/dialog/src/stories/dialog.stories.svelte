@@ -1,7 +1,7 @@
 <script>
 	import { fade, fly } from 'svelte/transition';
 	import { Meta, Template, Story } from '@storybook/addon-svelte-csf';
-	import { Close, Trigger, Portal, Content, Root } from '..';
+	import { Close, Trigger, Portal, Content, Root } from '../lib';
 	let leastDestructiveRef;
 </script>
 

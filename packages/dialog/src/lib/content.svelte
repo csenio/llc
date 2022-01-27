@@ -1,6 +1,6 @@
 <script>
 	import { getContext } from 'svelte';
-	import { FocusScope } from 'focus-scope';
+	import { FocusScope } from '@laudis/focus-scope';
 	export let entry;
 	export let autoFocusOnMount;
 

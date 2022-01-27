@@ -1,6 +1,6 @@
 <script>
 	import { onDestroy, onMount, tick } from 'svelte';
-	import { focus } from 'utils';
+	import { focus } from '@laudis/utils';
 	export let loop = true;
 	export let autoFocusOnMount = true;
 	export let autoFocusOnUnMount;
