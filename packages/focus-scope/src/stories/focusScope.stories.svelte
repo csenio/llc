@@ -1,6 +1,6 @@
 <script>
 	import { Meta, Template, Story } from '@storybook/addon-svelte-csf';
-	import { FocusScope } from '.';
+	import { FocusScope } from '../lib';
 </script>
 
 <Meta title="Utils/FocusScope" />

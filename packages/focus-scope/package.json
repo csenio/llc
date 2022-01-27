@@ -1,14 +1,22 @@
 {
 	"name": "@laudis/focus-scope",
-	"version": "0.0.0",
-	"description": "Styles and components for use in svelte websites",
-	"type": "module",
-	"module": "./src/index.mjs",
-	"svelte": "./src/index.mjs",
-	"license": "MIT",
-	"devDependencies": {
-		"svelte": "^3.9.2"
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "svelte-kit dev",
+		"build": "svelte-kit build",
+		"package": "svelte-kit package",
+		"preview": "svelte-kit preview"
 	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/kit": "next",
+		"svelte": "^3.9.2",
+		"svelte2tsx": "^0.4.14",
+		"typescript": "^4.5.4"
+	},
+	"type": "module",
+	"module": "./src/lib/index.mjs",
+	"svelte": "./src/lib/index.mjs",
 	"files": [
 		"src",
 		"dist"
